@@ -5,6 +5,8 @@
  */
 package Polimorfismo;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Andres
@@ -22,6 +24,19 @@ public class Perros extends Animal {
             System.out.println("el perro esta caminando y va el el paso"+contador);
             contador+=1;
        }
+    }
+    public void ladrar(int entradaVecesLadridos){
+        for (int i = 0; i <= entradaVecesLadridos; i++) {
+            System.out.println("wof...wof");
+        }
+    }
+    public void ladrar(String mensaje,int cantidadVecesLadrar){
+        String salida=" ";
+        for (int i = 0; i < cantidadVecesLadrar; i++) {
+            
+            salida = salida+mensaje+" ";
+        }
+        JOptionPane.showMessageDialog(null, "Ladro");
     }
 
 }
