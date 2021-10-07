@@ -46,6 +46,8 @@ public class arraylist {
                 int edadp = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingrese la edad"));
                 persona objetox = new persona(idp, nombrep, apellidop, edadp);
                 arregloPersona.add(objetox);
+            }else{
+                break;
             }
 
             //recorrer el arreglo
